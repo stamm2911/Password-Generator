@@ -2,6 +2,7 @@
 *::before,
 *::after {
   box-sizing: border-box;
+  transition: all 0.5s ease-in-out;
 }
 
 html,
@@ -32,6 +33,7 @@ header {
 
 .card {
   background-color: hsl(0, 0%, 100%);
+  border: 2px solid black;
   border-radius: 5px;
   border-width: 1px;
   box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px 0px;
@@ -40,6 +42,8 @@ header {
   margin: 0 auto;
   max-width: 800px;
   padding: 30px 40px;
+  box-shadow: 10px 10px 5px #aaaaaa;
+
 }
 
 .card-header::after {
@@ -116,6 +120,19 @@ button[disabled] {
   border-radius: 6px;
   resize: none;
   overflow: hidden;
+}
+
+#generate::after{
+  content: " 🔒";
+}
+
+textarea{
+  box-shadow: inset 0px 0px 8px rgb(0, 81, 255), 
+                    0px 0px 8px rgb(0, 81, 255);
+}
+
+h1{
+  color: rgb(8, 53, 175);
 }
 
 @media (max-width: 690px) {

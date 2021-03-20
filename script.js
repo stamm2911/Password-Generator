@@ -8,7 +8,6 @@ var generateBtn = document.querySelector("#generate");
 
 // Write password to the #password input
 function writePassword(userInput) {
-  // console.log(userInput + "e");
   var password = generatePassword(userInput);
   var passwordText = document.querySelector("#password");
 
