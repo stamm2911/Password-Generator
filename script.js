@@ -124,7 +124,7 @@ function generatePassword(userInput) {
   return password.join('');
 }
 
-
+// Function to call to shuffle an array
 function shuffle(array) {
   for (var i = array.length - 1; i > 0; i--) {
       var j = Math.floor(Math.random() * (i + 1));
@@ -138,13 +138,14 @@ function shuffle(array) {
 generateBtn.addEventListener("click", function () {
   var userInput = window.prompt("Enter the length of your password (min 8 characters, max 128 characters):");
   var checkUserInputNumber = userInput * 0;
+  var mod = userInput % 1;
 
-  // If users input is not a number between 8 and 128, then
-  if (isNaN(checkUserInputNumber) || userInput < 8 || userInput > 128) {
-    while (isNaN(checkUserInputNumber) || userInput < 8 || userInput > 128) {
+  // If users input is not a strict number between 8 and 128, then
+  if (isNaN(checkUserInputNumber) || userInput < 8 || userInput > 128 || mod > 0){
+    while (isNaN(checkUserInputNumber) || userInput < 8 || userInput > 128 || mod > 0) {
       userInput = window.prompt("Try again. \nEnter the length of your password (min 8 characters, max 128 characters):");
+      mod = userInput % 1;
       checkUserInputNumber = userInput * 0;
-      // console.log("ffff"+!Number.isInteger(userInput));
     }
     writePassword(userInput);
   // If users input is a number between 8 and 128, then
