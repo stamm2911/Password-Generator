@@ -40,7 +40,7 @@ function generatePassword(userInput) {
   }
   console.log("Numerics: " + numeric);
   
-  var special = window.confirm("Do you want sopecial characters in your password??");
+  var special = window.confirm("Do you want special characters in your password??");
   if(special){
     charactersChosen++;
   }
