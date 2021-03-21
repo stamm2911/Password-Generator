@@ -23,10 +23,10 @@ In this webpage, you will find:
 ![badmath](https://img.shields.io/github/languages/top/stamm2911/Password-Generator)
 1. When the user clicks the button to generate a password, then a series of prompts are presented for password criteria.
 2. The user is first prompted for password length. The user must only type a length of at least 8 characters and no more than 128 characters, otherwise the prompt will ask you for the length again until a valid value is input.
-3. Then, the user is prompted for lowerCase character to be included in the password or not.
-4. Then, the user is prompted for upperCase character to be included in the password or not.
-5. Then, the user is prompted for numeric character to be included in the password or not.
-6. Then, the user is prompted for special character to be included in the password or not.
+3. Then, the user is prompted for lowerCase characters to be included in the password or not.
+4. Then, the user is prompted for upperCase characters to be included in the password or not.
+5. Then, the user is prompted for numeric characters to be included in the password or not.
+6. Then, the user is prompted for special characters to be included in the password or not.
 7. When all prompts are answered, a password is generated that matches the selected criteria.
 8. The password is written to the page in the not editable text box.
 
