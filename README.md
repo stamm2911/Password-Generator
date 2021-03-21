@@ -1,9 +1,8 @@
 # Password Generator
 
 ## Description
-```
 This repo contains a random password generator web app. The porpuse of this project is to reenforce the usage of javascript and the logics behind it.
-```
+
 
 ## Table of Contents 
 - [What to expect](#what-to-expect)
